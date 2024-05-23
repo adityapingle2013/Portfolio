@@ -61,7 +61,6 @@ where new_cases = 0 or new_deaths =0;
 
 
 --global numbers
-
 select sum(new_cases) as total_case, sum(new_deaths) as total_deaths, SUM(new_deaths)/sum(new_cases)*100 as death_percentage
 from covidDeaths
 where continent is not null
